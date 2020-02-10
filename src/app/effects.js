@@ -18,17 +18,17 @@ export const storage = {
   },
 };
 
-export const router = {
-  initialize(routes) {
-    Object.keys(routes).forEach(url => {
-      page(url, ({ params }) => routes[url](params));
-    });
-    page.start();
-  },
-  goTo(url) {
-    page.show(url);
-  },
-};
+// export const router = {
+//   initialize(routes) {
+//     Object.keys(routes).forEach(url => {
+//       page(url, ({ params }) => routes[url](params));
+//     });
+//     page.start();
+//   },
+//   goTo(url) {
+//     page.show(url);
+//   },
+// };
 
 export const ids = {
   create() {
